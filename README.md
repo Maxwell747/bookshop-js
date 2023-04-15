@@ -30,17 +30,3 @@ In the function `createPurchaseOrder` in the file purchaseOrders.ts the db.run s
 The function `chargeCustomerForPO` is not implemented and the user is not notified, including a message in the response for the user would be useful.
 
 The database is not susceptible to injection attacks since parameterized queries are used.
-
-
-
-
-
-/books/new - {"title": string, "author": string, "price": number}
-/books/price - {"title": string, "author": string}
-/customers/new - {"name": string, "shippingAddress": string}
-/customers/address - {"cid": number, "address": string}
-/customers/balance - {"cid": number}
-/orders/new - {"title": string, "author": string, "name": string, "shippingAddress": string}
-/orders/shipped - {"title": string, "author": string, "name": string, "shippingAddress": string}
-/orders/ship - {"pid": number}
-/orders/status - {"cid": number, "bid": number}
